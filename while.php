@@ -1,5 +1,5 @@
 <?php
-    $title = 'foreach Loop';
+    $title = 'while Loop';
 
     $favoriteGuitars = [
         'Vela',
@@ -19,25 +19,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Php fundamentals: <?= $title; ?></title>
+    <title>Document</title>
 </head>
 <body>
-    <table class = "table">
+<table class = "table">
     <?php
-   
-    foreach ($favoriteGuitars as $guitar) {
+    $i = 0;
+    while($i < count($favoriteGuitars)) {
+
+        $guitar = $favoriteGuitars[$i];
         echo "<tr><td>$guitar</td></tr>";
-    }
-
-    ?>
-
-    </table>
-    <br>
-    <table class = "table1">
-    <?php
-   
-    foreach ($kvpGuitars as $key => $guitar) {
-        echo "<tr><td>$key</td><td>$guitar</td><tr>";
+        $i++;
     }
 
     ?>

@@ -26,3 +26,10 @@ if(isset($guitars2['prs'])){
 else{
     echo "guitar does not exist<br>";
 }
+
+
+
+echo "<br>";
+echo '<pre>';
+print_r($guitars2);
+echo '</pre>';
