@@ -3,15 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Electricity Bill</title>
+    <style>
+        #div1-h1 {
+            background-color: orange;
+            color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #div2-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 120px; /* Add some spacing between the label and input */
+        }
+        .input-container {
+            background-color: yellow;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <form action="form.php" method="post">
-        <label for="UserName">UserName :</label>
-        <input type = "text" name = "UserName"><br><br>
-        <label for="Password">Password :</label>
-        <input type = "password" name = "Password"><br>
-        <input type = "submit" value = "login"> 
-    </form>
+      <form action="form.php" method="post">
+        <div id="main-div">
+            <div id="div1-h1">
+             <h1>Electricity Bill</h1>
+            </div>
+            <div class="input-container">
+             <div id="div2-2">
+                 <label for="consumer_number">Enter the consumer number</label>
+                 <input type="text" name="consumer_number" id="consumer_number" placeholder="Enter the consumer number">
+             </div>
+            </div>
+            <div class="input-container" style="background-color: white;">
+             <div id="div2-2">
+                 <label for="consumer_name">Enter the customer name</label>
+                 <input type="text" name="consumer_name" id="consumer_number" placeholder="Enter the customer name" style="margin-left: 15px;">
+             </div>
+            </div>
+            <div class="input-container">
+             <div id="div2-2">
+                 <label for="consumer_pre_reading">Enter the previous reading</label>
+                 <input type="number" name="consumer_pre_reading" id="consumer_number" placeholder="Enter the previous reading" style="margin-left: 10px;">
+             </div>
+            </div>
+            <div class="input-container" style="background-color: white;">
+             <div id="div2-2">
+                 <label for="consumer_pres_reading">Enter the present reading</label>
+                 <input type="number" name="consumer_pres_reading" id="consumer_number" placeholder="Enter the present reading" style="margin-left: 12px;">
+             </div>
+            </div>
+            <div style="background-color: orange; height: 80px;" id="submit">
+                <input type="submit" value="Submit" style="height: 30px;width: 70pxpx;">
+            </div>
+         </div>
+      </form>
 </body>
 </html>
